@@ -1,0 +1,259 @@
+/* Index */
+
+/* Elementos */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    /*font-size: 0px;*/
+}
+
+body {
+    background-color: #D8BFD8;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* Classes */
+.navegacao {
+    height: 40px;
+    background-color: #E6E6FA;
+    color: #C71585;
+
+    animation-name: navigation;
+    animation-duration: 8s;
+}
+
+.navegacao ul {
+    list-style: none;
+    margin-top: 0px;
+    padding-left: 0px;
+    text-align: right;
+    height: 40px;
+}
+
+.navegacao li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.navegacao a {
+    color: #C71585;
+    text-decoration: none;
+}
+
+.navegacao a:hover {
+    color: #9400D3;
+}
+
+.navegacao li.threeline-icon {
+    display: none;
+}
+
+.capa {
+    color: #800000;
+}
+
+.capa span {
+    color: 	#4B0082;
+    display: block;
+}
+
+.capa div {
+    display: inline-block;
+    height: 650px;
+}
+
+.profile-image {
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-capa;
+    animation-duration: 5s;
+}
+
+.profile-image img {
+    border-radius: 350px;
+    margin-top: 100px;
+    width: 350px;
+}
+
+.profile-tittle {
+    vertical-align: top;
+    /*width: 60%;*/
+    width: 59%;
+
+    animation-name: titulo-capa;
+    animation-duration: 5s;
+}
+
+.profile-tittle h1 {
+    font-size: 60px ;
+    margin-top: 220px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.profile-tittle h2 {
+    font-size: 18px;
+    /* font-weight: 100px; */
+    margin-top: -30px;
+}
+
+/* Curriculo */
+
+/* Classes */
+.main {
+    padding: 70px 130px 70px 90px;
+
+    animation-name: conteudo;
+    animation-duration: 3s;
+}
+
+.img-cv {
+    float: right;
+    border-radius: 50px;
+    width: 200px;
+
+    animation-name: cv-img;
+    animation-duration: 3s;
+}
+
+.main h1 {
+    color: 	#008080;
+    font-weight: normal;
+}
+
+.main h2 {
+    color: 	#8B0000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.main h3 {
+    color: #191970;
+    font-size: 16px;
+}
+
+.main p {
+    color: 	#8B4513;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: 	#191970;
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+.caminho a {
+    color: #191970;
+}
+
+/* Contato */
+
+/*TAGs */
+
+.social-img {
+    width: 45px;
+    margin-right: 8px;
+}
+
+/* Portfolio */
+
+/* Classes */
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    opacity: 0;
+    padding-top: 100px;
+
+    transition: 0.5s;
+}
+
+.blackbox:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.blackbox-text {
+    text-align: center;
+}
+
+.blackbox-text h1 {
+    font-size: 16px;
+    color: 	#8B008B;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blackbox-text h2 {
+    color: 	#8B0000;
+    text-transform: none;
+    font-weight: 150px;
+    margin-top: 0;
+}
+
+.back-link {
+    color: #CD5C5C;
+}
+
+@keyframes profile-capa {
+    0% {opacity: 0; transform: translate(0px, 20px);}
+    100% {opacity: 1; transform: translate(0x, 0px);}
+}
+
+@keyframes titulo-capa {
+    0% {opacity: 0; transform: translate(0px, -40px);}
+    100% {opacity: 1; transform: translate(0x, 0px);}
+}
+
+@keyframes navigation {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes conteudo {
+    0% {transform: translate(-30px, 0px);}
+    100% {transform: translate(0x, 0px);}
+}
+
+@keyframes cv-img {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-widht: 1000px) {
+    .navegacao li {
+        display: none;
+    }
+
+    .navegacao li.threeline-icon {
+        display: inline-block;
+    }
+}
