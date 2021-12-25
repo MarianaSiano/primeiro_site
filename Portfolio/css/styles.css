@@ -272,4 +272,22 @@ body {
     .profile-tittle {
         width: 100%;
     }
+
+    .menujs {
+        height: auto;
+    }
+
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .menujs li {
+        display: block;
+        border-bottom: solid #F5FFFA 1px;
+        width: 100%;
+        padding: 0;
+    }
 }
