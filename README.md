@@ -1,5 +1,5 @@
 # Primeiro Site
 
-* Curriculo para Website. <br><br>
+* Primeiro Website. <br><br>
 
-\* Ainda incompleto, mas logo estará terminado.
+/* Falta terminar a responsividade.

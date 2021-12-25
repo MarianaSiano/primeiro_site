@@ -51,6 +51,11 @@ body {
     display: none;
 }
 
+.navegacao li.threeline-icon:hover {
+    color: #9400D3;
+    cursor: pointer;
+}
+
 .capa {
     color: #800000;
 }
